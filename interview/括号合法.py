@@ -24,17 +24,17 @@ def is_valid(str):
             else:
                 return False
         if c == '[':
-            i += 1
+            j += 1
         if c == ']':
-            i -= 1
+            j -= 1
             if i % 2 == j % 2 and i % 2 == k % 2:
                 continue
             else:
                 return False
         if c == '{':
-            i += 1
+            k += 1
         if c == '}':
-            i -= 1
+            k -= 1
             if i % 2 == j % 2 and i % 2 == k % 2:
                 continue
             else:
